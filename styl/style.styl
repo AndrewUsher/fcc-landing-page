@@ -1,0 +1,218 @@
+*,
+*:before,
+*:after
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+.container
+  width: 90%;
+  margin: 0 auto;
+
+body
+  overflow-x: hidden;
+
+a 
+  color: #f2f2f2;
+  font-family: 'Fira Sans'
+  text-decoration: none;
+
+header 
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100vw;
+  position: fixed;
+  transition: all 400ms ease-in-out;
+  z-index: 1;
+  .logo
+    display: inline-block;
+    img 
+      display: inline-block;
+      float: left;
+    h1
+      color: #f2f2f2;
+      display: inline-block;
+      font-size: 30px;
+      font-weight: normal;
+      font-family: 'Fira Sans';
+      margin-left: 10px;
+      position: relative;
+      top: 5px;
+  nav 
+    display: inline-block;
+  li
+    display: inline-block; 
+    a
+      color: #f2f2f2;
+      font-family: 'Fira Sans'
+      font-size: 18px;
+      margin-right: 20px;
+
+.header-bg
+  background-color: #333333;
+  padding: 10px;
+
+
+#hero 
+  background: url('../img/forest.jpg') center center no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  &:before
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 1.57%, rgba(0, 0, 0, 0.1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  #hero-box
+    color: #f2f2f2;
+    font-family: 'Fira Sans';
+    padding: 10px;
+    text-align: center;
+    p
+      font-size: 45px;
+      margin-bottom: 40px;
+    a:link,
+    a:visited
+      border: 4px solid #f2f2f2;
+      border-radius: 2px;
+      font-weight: 100;
+      font-size: 30px;
+      padding: 10px 60px;
+    a:hover
+      background: #f2f2f2;
+  
+#about
+  display: flex;
+  justify-content: flex-end;
+
+.box
+  width: 50%;
+
+
+#about
+  background: url('../img/bike.png') no-repeat;
+  background-size: cover;
+
+.right-side
+  background-color: rgba(#f2f2f2, 90%);
+  padding: 40px 10px 0 50px;
+  font-family: 'Fira Sans';
+  h2 
+    font-size: 30px;
+    margin-bottom: 15px;
+  p 
+    font-size: 20px;
+    line-height: 1.5rem;
+    max-width: 30rem;
+    margin-bottom: 20px;
+
+#pricing
+  background-color: rgba(#000, 70%);
+  text-align: center;
+  .pricebox-container
+    display: flex;
+    justify-content: space-between;
+    .pricebox-main
+      transform: scale(1.1);
+    .pricebox
+      margin: 50px 0;
+      background-color: #f2f2f2;
+      padding: 20px;
+      width: 30%;
+      h3 
+        font-family: 'Fira Sans';
+        font-size: 30px;
+      h4 
+        font-size: 25px;
+      ul
+        list-style: none;
+      li 
+        border-bottom: 1px solid #333;
+        font-family: 'Fira Sans'
+        font-size: 20px;
+        padding: 20px;
+      li:last-child
+        border-bottom: 0;
+
+#contact
+  background-color: rgba(#096C47, 80%);
+  font-family: 'Fira Sans'
+  padding: 20px;
+  text-align: center;
+  .form-box 
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    h3 
+      font-size: 36px;
+      margin-bottom: 5px;
+    p 
+      font-size: 30px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    form
+      label
+        margin-right: 5px;
+      input[type=email],
+      label
+        font-size: 20px;
+      input[type=email]
+        background-color: rgba(#333, 20%)
+        border: none;
+        padding: 5px;
+        &:focus
+          border: 2px solid #096C47;
+      input[type=submit]
+        background-color: rgba(#096C47, 60%);
+        border: none;
+        border-radius: 3px;
+        display: block;
+        font-size: 24px;
+        margin: 20px auto;
+        padding: 10px 15px;
+
+@media (max-width: 650px) 
+  header
+    padding: 5px;
+    display: block;
+    text-align: center;
+    img 
+      display: block;
+      height: 35px;
+      position: relative;
+      top: 5px;
+    
+      margin-bottom: 20px;
+    nav 
+      li
+        text-align: center;
+      .nav-link
+        font-size: 16px;
+  
+  #about 
+    display: block;
+
+    .box
+      width:100%;
+      padding: 30px 20px;
+      h2 
+        text-align: center;
+
+  #pricing 
+    display: block;
+    .pricebox-container
+      flex-direction: column;
+      align-content: center;
+      .pricebox-main
+        transform: none;
+      .pricebox
+        margin-bottom: 20px;
+        width: 100%;
