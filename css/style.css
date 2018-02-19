@@ -112,7 +112,7 @@ header li a {
 }
 .right-side {
   background-color: rgba(242,242,242,0.9);
-  padding: 40px 10px 0 50px;
+  padding: 40px 10px 40px 50px;
   font-family: 'Fira Sans';
 }
 .right-side h2 {
